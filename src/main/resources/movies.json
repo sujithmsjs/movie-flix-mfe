@@ -1,0 +1,303 @@
+[
+	{
+		"id": 0,
+		"title": "Inception",
+		"genre": "ACTION",
+		"director": "Christopher Nolan",
+		"duration": 148,
+		"rating": 8.8,
+		"releaseDate": "2010-07-16",
+		"collection": 836.83
+	},
+	{
+		"id": 1,
+		"title": "The Avengers",
+		"genre": "ACTION",
+		"director": "Joss Whedon",
+		"duration": 143,
+		"rating": 8.0,
+		"releaseDate": "2012-05-04",
+		"collection": 1.518
+	},
+	{
+		"id": 2,
+		"title": "The Dark Knight",
+		"genre": "ACTION",
+		"director": "Christopher Nolan",
+		"duration": 152,
+		"rating": 9.0,
+		"releaseDate": "2008-07-18",
+		"collection": 1.005
+	},
+	{
+		"id": 3,
+		"title": "Avatar",
+		"genre": "SCI_FI",
+		"director": "James Cameron",
+		"duration": 162,
+		"rating": 7.8,
+		"releaseDate": "2009-12-18",
+		"collection": 2.847
+	},
+	{
+		"id": 4,
+		"title": "Pulp Fiction",
+		"genre": "CRIME",
+		"director": "Quentin Tarantino",
+		"duration": 154,
+		"rating": 8.9,
+		"releaseDate": "1994-10-14",
+		"collection": 214
+	},
+	{
+		"id": 5,
+		"title": "Forrest Gump",
+		"genre": "DRAMA",
+		"director": "Robert Zemeckis",
+		"duration": 142,
+		"rating": 8.8,
+		"releaseDate": "1994-07-06",
+		"collection": 678.2
+	},
+	{
+		"id": 6,
+		"title": "Jurassic Park",
+		"genre": "ADVENTURE",
+		"director": "Steven Spielberg",
+		"duration": 127,
+		"rating": 8.1,
+		"releaseDate": "1993-06-11",
+		"collection": 1.029
+	},
+	{
+		"id": 7,
+		"title": "Incredibles",
+		"genre": "ANIMATION",
+		"director": "Brad Bird",
+		"duration": 115,
+		"rating": 8.0,
+		"releaseDate": "2004-11-05",
+		"collection": 633
+	},
+	{
+		"id": 8,
+		"title": "The Lion King",
+		"genre": "ANIMATION",
+		"director": "Roger Allers, Rob Minkoff",
+		"duration": 89,
+		"rating": 8.5,
+		"releaseDate": "1994-06-15",
+		"collection": 987.5
+	},
+	{
+		"id": 9,
+		"title": "The Shawshank Redemption",
+		"genre": "DRAMA",
+		"director": "Frank Darabont",
+		"duration": 142,
+		"rating": 9.3,
+		"releaseDate": "1994-09-23",
+		"collection": 58.3
+	},
+	{
+		"id": 10,
+		"title": "Jaws",
+		"genre": "THRILLER",
+		"director": "Steven Spielberg",
+		"duration": 124,
+		"rating": 8.0,
+		"releaseDate": "1975-06-20",
+		"collection": 470.7
+	},
+	{
+		"id": 11,
+		"title": "E.T. the Extra-Terrestrial",
+		"genre": "SCI_FI",
+		"director": "Steven Spielberg",
+		"duration": 115,
+		"rating": 7.8,
+		"releaseDate": "1982-06-11",
+		"collection": 792.9
+	},
+	{
+		"id": 12,
+		"title": "The Godfather",
+		"genre": "CRIME",
+		"director": "Francis Ford Coppola",
+		"duration": 175,
+		"rating": 9.2,
+		"releaseDate": "1972-03-24",
+		"collection": 245.1
+	},
+	{
+		"id": 13,
+		"title": "The Matrix",
+		"genre": "SCI_FI",
+		"director": "The Wachowskis",
+		"duration": 136,
+		"rating": 8.7,
+		"releaseDate": "1999-03-31",
+		"collection": 465.3
+	},
+	{
+		"id": 14,
+		"title": "Toy Story",
+		"genre": "ANIMATION",
+		"director": "John Lasseter",
+		"duration": 81,
+		"rating": 8.3,
+		"releaseDate": "1995-11-22",
+		"collection": 373.6
+	},
+	{
+		"id": 15,
+		"title": "Titanic",
+		"genre": "DRAMA",
+		"director": "James Cameron",
+		"duration": 195,
+		"rating": 7.8,
+		"releaseDate": "1997-12-19",
+		"collection": 2.208
+	},
+	{
+		"id": 16,
+		"title": "Frozen",
+		"genre": "ANIMATION",
+		"director": "Chris Buck, Jennifer Lee",
+		"duration": 102,
+		"rating": 7.4,
+		"releaseDate": "2013-11-22",
+		"collection": 1.276
+	},
+	{
+		"id": 17,
+		"title": "Gladiator",
+		"genre": "ACTION",
+		"director": "Ridley Scott",
+		"duration": 155,
+		"rating": 8.5,
+		"releaseDate": "2000-05-05",
+		"collection": 460.5
+	},
+	{
+		"id": 18,
+		"title": "The Social Network",
+		"genre": "DRAMA",
+		"director": "David Fincher",
+		"duration": 120,
+		"rating": 7.7,
+		"releaseDate": "2010-09-24",
+		"collection": 224.9
+	},
+	{
+		"id": 19,
+		"title": "The Revenant",
+		"genre": "DRAMA",
+		"director": "Alejandro González Iñárritu",
+		"duration": 156,
+		"rating": 8.0,
+		"releaseDate": "2015-12-25",
+		"collection": 532.9
+	},
+	{
+		"id": 20,
+		"title": "Black Panther",
+		"genre": "ACTION",
+		"director": "Ryan Coogler",
+		"duration": 134,
+		"rating": 7.3,
+		"releaseDate": "2018-02-16",
+		"collection": 1.347
+	},
+	{
+		"id": 21,
+		"title": "Harry Potter and the Sorcerer's Stone",
+		"genre": "FANTASY",
+		"director": "Chris Columbus",
+		"duration": 152,
+		"rating": 7.6,
+		"releaseDate": "2001-11-16",
+		"collection": 974.8
+	},
+	{
+		"id": 22,
+		"title": "The Lord of the Rings: The Fellowship of the Ring",
+		"genre": "ADVENTURE",
+		"director": "Peter Jackson",
+		"duration": 178,
+		"rating": 8.8,
+		"releaseDate": "2001-12-19",
+		"collection": 887.5
+	},
+	{
+		"id": 23,
+		"title": "Iron Man",
+		"genre": "ACTION",
+		"director": "Jon Favreau",
+		"duration": 126,
+		"rating": 7.9,
+		"releaseDate": "2008-05-02",
+		"collection": 585.2
+	},
+	{
+		"id": 24,
+		"title": "The Shawshank Redemption",
+		"genre": "DRAMA",
+		"director": "Frank Darabont",
+		"duration": 142,
+		"rating": 9.3,
+		"releaseDate": "1994-09-23",
+		"collection": 58.3
+	},
+	{
+		"id": 25,
+		"title": "The Martian",
+		"genre": "SCI_FI",
+		"director": "Ridley Scott",
+		"duration": 144,
+		"rating": 8.0,
+		"releaseDate": "2015-10-02",
+		"collection": 630.2
+	},
+	{
+		"id": 26,
+		"title": "The Great Gatsby",
+		"genre": "DRAMA",
+		"director": "Baz Luhrmann",
+		"duration": 143,
+		"rating": 7.2,
+		"releaseDate": "2013-05-10",
+		"collection": 353.6
+	},
+	{
+		"id": 27,
+		"title": "Deadpool",
+		"genre": "ACTION",
+		"director": "Tim Miller",
+		"duration": 108,
+		"rating": 8.0,
+		"releaseDate": "2016-02-12",
+		"collection": 782.6
+	},
+	{
+		"id": 28,
+		"title": "Finding Nemo",
+		"genre": "ANIMATION",
+		"director": "Andrew Stanton, Lee Unkrich",
+		"duration": 100,
+		"rating": 8.1,
+		"releaseDate": "2003-05-30",
+		"collection": 940.3
+	},
+	{
+		"id": 29,
+		"title": "Gravity",
+		"genre": "SCI_FI",
+		"director": "Alfonso Cuarón",
+		"duration": 91,
+		"rating": 7.7,
+		"releaseDate": "2013-10-04",
+		"collection": 723.2
+	}
+]
+

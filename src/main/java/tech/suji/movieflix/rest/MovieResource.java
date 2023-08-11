@@ -18,8 +18,8 @@ import tech.suji.movieflix.model.MovieDTO;
 import tech.suji.movieflix.service.MovieService;
 
 
-@RestController
-@RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
+//@RestController
+//@RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
 public class MovieResource {
 
     private final MovieService movieService;
