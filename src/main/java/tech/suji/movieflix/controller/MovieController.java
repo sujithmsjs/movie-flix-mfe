@@ -17,51 +17,45 @@ import org.springframework.web.bind.annotation.RestController;
 import tech.suji.movieflix.model.MovieDTO;
 import tech.suji.movieflix.service.MovieService;
 
-
-
 @RestController
 @RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
 public class MovieController {
 
-//@RestController
-//@RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
+	private final MovieService movieService;
 
+	public MovieController(final MovieService movieService) {
+		this.movieService = movieService;
+	}
 
-    private final MovieService movieService;
+	@GetMapping
+	public ResponseEntity<List<MovieDTO>> getAllMovies() {
+		return ResponseEntity.ok(movieService.findAll());
+	}
 
-    public MovieController(final MovieService movieService) {
-        this.movieService = movieService;
-    }
+	@GetMapping("/{id}")
+	public ResponseEntity<MovieDTO> getMovie(@PathVariable(name = "id") final Long id) {
+		return ResponseEntity.ok(movieService.get(id));
+	}
 
-    @GetMapping
-    public ResponseEntity<List<MovieDTO>> getAllMovies() {
-        return ResponseEntity.ok(movieService.findAll());
-    }
+	@PostMapping
+	@ApiResponse(responseCode = "201")
+	public ResponseEntity<Long> createMovie(@RequestBody @Valid final MovieDTO movieDTO) {
+		final Long createdId = movieService.create(movieDTO);
+		return new ResponseEntity<>(createdId, HttpStatus.CREATED);
+	}
 
-    @GetMapping("/{id}")
-    public ResponseEntity<MovieDTO> getMovie(@PathVariable(name = "id") final Long id) {
-        return ResponseEntity.ok(movieService.get(id));
-    }
+	@PutMapping("/{id}")
+	public ResponseEntity<Long> updateMovie(@PathVariable(name = "id") final Long id,
+			@RequestBody @Valid final MovieDTO movieDTO) {
+		movieService.update(id, movieDTO);
+		return ResponseEntity.ok(id);
+	}
 
-    @PostMapping
-    @ApiResponse(responseCode = "201")
-    public ResponseEntity<Long> createMovie(@RequestBody @Valid final MovieDTO movieDTO) {
-        final Long createdId = movieService.create(movieDTO);
-        return new ResponseEntity<>(createdId, HttpStatus.CREATED);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Long> updateMovie(@PathVariable(name = "id") final Long id,
-            @RequestBody @Valid final MovieDTO movieDTO) {
-        movieService.update(id, movieDTO);
-        return ResponseEntity.ok(id);
-    }
-
-    @DeleteMapping("/{id}")
-    @ApiResponse(responseCode = "204")
-    public ResponseEntity<Void> deleteMovie(@PathVariable(name = "id") final Long id) {
-        movieService.delete(id);
-        return ResponseEntity.noContent().build();
-    }
+	@DeleteMapping("/{id}")
+	@ApiResponse(responseCode = "204")
+	public ResponseEntity<Void> deleteMovie(@PathVariable(name = "id") final Long id) {
+		movieService.delete(id);
+		return ResponseEntity.noContent().build();
+	}
 
 }
