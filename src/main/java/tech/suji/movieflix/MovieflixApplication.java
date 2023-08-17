@@ -43,9 +43,11 @@ public class MovieflixApplication implements ApplicationRunner {
 
 		String content = IOUtils.toString(resource.getInputStream(), StandardCharsets.UTF_8);
 
+
 		List<Movie> movieList = objectMapper.readValue(content, new TypeReference<List<Movie>>() {});
 
 		movieList.stream().distinct().forEach(m ->  movieRepository.save(m));
+
 	}
 
 }
