@@ -1,4 +1,4 @@
-package tech.suji.movieflix.rest;
+package tech.suji.movieflix.controller;
 
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
@@ -18,13 +18,13 @@ import tech.suji.movieflix.model.MovieDTO;
 import tech.suji.movieflix.service.MovieService;
 
 
-//@RestController
-//@RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
-public class MovieResource {
+@RestController
+@RequestMapping(value = "/api/movies", produces = MediaType.APPLICATION_JSON_VALUE)
+public class MovieController {
 
     private final MovieService movieService;
 
-    public MovieResource(final MovieService movieService) {
+    public MovieController(final MovieService movieService) {
         this.movieService = movieService;
     }
 

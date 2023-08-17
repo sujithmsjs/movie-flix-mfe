@@ -41,25 +41,11 @@ public class MovieflixApplication implements ApplicationRunner {
 		// Create a ClassPathResource object for the JSON file
 		ClassPathResource resource = new ClassPathResource("movies.json");
 
-		// Read the contents of the JSON file into a String
-		// String jsonString = FileCopyUtils.copyToString(resource.get);
-
 		String content = IOUtils.toString(resource.getInputStream(), StandardCharsets.UTF_8);
-		//System.out.println(content);
 
 		List<Movie> movieList = objectMapper.readValue(content, new TypeReference<List<Movie>>() {});
 
 		movieList.stream().distinct().forEach(m ->  movieRepository.save(m));
-
-
-		// Do something with the JSON string
-
-//		Resource resource = resourceLoader.getResource("classpath:movies.json");
-//		log.error(resourceLoader.toString());
-//		log.error(resource.exists()+"");
-//
-//		Resource resource2 = new ClassPathResource("movies.json");
-//		log.error(resource2.exists()+"");
 	}
 
 }
