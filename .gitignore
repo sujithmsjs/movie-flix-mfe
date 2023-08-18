@@ -1,4 +1,5 @@
 HELP.md
+bin/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -7,10 +8,6 @@ application-local.yml
 *.log
 node_modules/
 node/
-
-.mvn/wrapper
-mvnw
-mvnw.cmd
 
 ### STS ###
 .apt_generated
