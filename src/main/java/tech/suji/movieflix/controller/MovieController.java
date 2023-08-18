@@ -28,7 +28,11 @@ public class MovieController {
 	}
 
 	@GetMapping
-	public ResponseEntity<List<MovieDTO>> getAllMovies() {
+	public ResponseEntity<List<MovieDTO>> getAllMovies() throws InterruptedException {
+
+		Thread.sleep(5_000);
+
+
 		return ResponseEntity.ok(movieService.findAll());
 	}
 
